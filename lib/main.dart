@@ -28,12 +28,50 @@ class MyApp extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Icon(Icons.science),
-                Text("Science"),
-                Text("Coocking"),
-                Text("Math"),
-                Text("Biology"),
-                Text("Design"),
+                Column(
+                  children: [
+                    Icon(Icons.science),
+                    Text("Science"),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(Icons.food_bank),
+                    Text("Coocking"),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(Icons.numbers),
+                    Text("Math"),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(Icons.biotech),
+                    Text("Biology"),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(Icons.table_bar),
+                    Text("Design"),
+                  ],
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Text(
+                  'Continue Learning:',
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
+                Column(
+                  children: [
+                    Icon(Icons.table_bar),
+                    Text("Design"),
+                  ],
+                ),
               ],
             )
           ],
