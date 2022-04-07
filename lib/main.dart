@@ -9,6 +9,36 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      title: "UTS no 2 Frendy",
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("UTS-c14170108"),
+        ),
+        body: Column(
+          children: [
+            Row(
+              children: [
+                Text(
+                  "Popular Courses:",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Icon(Icons.science),
+                Text("Science"),
+                Text("Coocking"),
+                Text("Math"),
+                Text("Biology"),
+                Text("Design"),
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
